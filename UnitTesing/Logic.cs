@@ -8,26 +8,26 @@ namespace UnitTesing
 {
     public class Logic
     {
-        int sum = 0;
-        public void PerfectNumber()
+        int Num, checkprime = 1;
+        public void CheckPrime()
         {
-            Console.WriteLine("Enter a Number To check Number is perfect or not");
-            int number = Convert.ToInt32(Console.ReadLine());
-            int temp = number;
-            for (int i = 1; i < number; i++)
+            Console.Write("Enter Number To Check Number is prime or not:");
+            Num = Convert.ToInt16(Console.ReadLine());
+            for (int i = 2; i <= Num / 2; i++)
             {
-                if (number % i == 0)
+                if (Num % i == 0)
                 {
-                    sum = sum + i;
+                    checkprime = 0;
                 }
+
             }
-            if (sum == temp)
+            if (checkprime == 1)
             {
-                Console.WriteLine("Number is Perfect Number :" + " " + sum);
+                Console.Write(Num + " Prime Number");
             }
             else
             {
-                Console.WriteLine("Number is mot perfect Number :" + " " + sum);
+                Console.Write(Num + " Not Prime Number");
             }
         }
     }

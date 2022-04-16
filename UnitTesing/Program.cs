@@ -2,4 +2,4 @@
 using UnitTesing;
 
 Logic series = new Logic();
-series.PerfectNumber();
+series.CheckPrime();
