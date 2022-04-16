@@ -8,26 +8,27 @@ namespace UnitTesing
 {
     public class Logic
     {
-        public static int FabonacciSeries(int n)
+        int sum = 0;
+        public void PerfectNumber()
         {
-            if (n == 0)
-
-                return 0;
-
-            if (n == 1)
-                return 1;
-            return FabonacciSeries(n - 1) + FabonacciSeries(n - 2);
-        }
-
-        public void Fabonacci()
-        {
-            Console.Write("enter length: ");
-            int length = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < length; i++)
+            Console.WriteLine("Enter a Number To check Number is perfect or not");
+            int number = Convert.ToInt32(Console.ReadLine());
+            int temp = number;
+            for (int i = 1; i < number; i++)
             {
-                Console.Write("{0} ", FabonacciSeries(i));
+                if (number % i == 0)
+                {
+                    sum = sum + i;
+                }
             }
-            Console.ReadKey();
+            if (sum == temp)
+            {
+                Console.WriteLine("Number is Perfect Number :" + " " + sum);
+            }
+            else
+            {
+                Console.WriteLine("Number is mot perfect Number :" + " " + sum);
+            }
         }
     }
 }
