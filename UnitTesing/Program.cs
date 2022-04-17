@@ -1,5 +1,5 @@
 ﻿using System;
 using VendingMachine;
 
-StopWatch stop = new StopWatch();
-stop.Measure();
+evest stop = new evest();
+stop.MinNumberofnot();
