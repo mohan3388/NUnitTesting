@@ -1,5 +1,5 @@
 ﻿using System;
-using UnitTesing;
+using VendingMachine;
 
-Logic series = new Logic();
-series.Fabonacci();
+StopWatch stop = new StopWatch();
+stop.Measure();

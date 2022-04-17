@@ -1,33 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnitTesing
+namespace VendingMachine
 {
-    public class Logic
+    public class StopWatch
     {
-        public static int FabonacciSeries(int n)
+        public void Measure()
         {
-            if (n == 0)
-
-                return 0;
-
-            if (n == 1)
-                return 1;
-            return FabonacciSeries(n - 1) + FabonacciSeries(n - 2);
-        }
-
-        public void Fabonacci()
-        {
-            Console.Write("enter length: ");
-            int length = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < length; i++)
+            Stopwatch stopwatch = new Stopwatch();
+            Console.WriteLine("Click spacebar and enter to start stopwatch");
+            string watcher = Console.ReadLine();
+            if (watcher == " ")
             {
-                Console.Write("{0} ", FabonacciSeries(i));
+                stopwatch.Start();
+                Console.WriteLine("Click spacebar and enter again to stop stopwatch");
+                while (watcher == " ")
+                {
+                    watcher += Console.ReadLine();
+
+                }
+                stopwatch.Stop();
+                Console.WriteLine($"Time elapsed is: {stopwatch.Elapsed} seconds");
             }
-            Console.ReadKey();
+            else
+            {
+                Console.WriteLine("Press spacebar only!... to start and stop stopwatch");
+            }
         }
     }
 }
