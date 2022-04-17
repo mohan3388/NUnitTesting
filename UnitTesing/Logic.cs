@@ -8,27 +8,31 @@ namespace UnitTesing
 {
     public class Logic
     {
-        int Num, checkprime = 1;
-        public void CheckPrime()
+        public void PrintCouponNumber(int n)//n=25
         {
-            Console.Write("Enter Number To Check Number is prime or not:");
-            Num = Convert.ToInt16(Console.ReadLine());
-            for (int i = 2; i <= Num / 2; i++)
+            int count = 0;
+            int check = RandomNumber(n);//21
+            Console.WriteLine("the coupon number is:" + n);
+            Console.WriteLine("the random number got:" + check);
+            while (n > 0)
             {
-                if (Num % i == 0)
+                if (check == n)//21!=25 25==25
                 {
-                    checkprime = 0;
+                    Console.WriteLine("Congrats!!got the coupon number in first attempt");
+                    break;
                 }
 
+                count++;//1 2
+                Console.WriteLine("count to get coupon number is:" + count);
+                n--;
             }
-            if (checkprime == 1)
-            {
-                Console.Write(Num + " Prime Number");
-            }
-            else
-            {
-                Console.Write(Num + " Not Prime Number");
-            }
+            Console.WriteLine("to get distinct coupon number, the number of times random number used:" + count);//total no of count=2
+        }
+        private static int RandomNumber(int n)
+        {
+            Random random = new Random();
+            n = random.Next(1, 9);
+            return n;
         }
     }
 }

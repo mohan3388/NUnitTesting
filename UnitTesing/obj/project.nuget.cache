@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oOybNoU8SSqFLOQbeWGSIqvXtqrPXk/29ruZoLrA0clC8x9PV62s1KFWqYBaGK980NtWx/8KYhU0xY7uYlJlLw==",
+  "dgSpecHash": "T8DhQgUGHS9dVycWcvmvTXy3c69dPLJ4IN4THpQlzPNMfv8MFjJ+qB+jnhc4TfEOozeayW9S04dyV2AQ0KkUUw==",
   "success": true,
-  "projectFilePath": "D:\\nunit\\NUnitTesting\\UnitTesing\\UnitTesing.csproj",
+  "projectFilePath": "D:\\nunit2\\NUnitTesting\\UnitTesing\\UnitTesing.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

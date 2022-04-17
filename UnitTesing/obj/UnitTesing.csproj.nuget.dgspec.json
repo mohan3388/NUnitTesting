@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\nunit\\NUnitTesting\\UnitTesing\\UnitTesing.csproj": {}
+    "D:\\nunit2\\NUnitTesting\\UnitTesing\\UnitTesing.csproj": {}
   },
   "projects": {
-    "D:\\nunit\\NUnitTesting\\UnitTesing\\UnitTesing.csproj": {
+    "D:\\nunit2\\NUnitTesting\\UnitTesing\\UnitTesing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\nunit\\NUnitTesting\\UnitTesing\\UnitTesing.csproj",
+        "projectUniqueName": "D:\\nunit2\\NUnitTesting\\UnitTesing\\UnitTesing.csproj",
         "projectName": "UnitTesing",
-        "projectPath": "D:\\nunit\\NUnitTesting\\UnitTesing\\UnitTesing.csproj",
+        "projectPath": "D:\\nunit2\\NUnitTesting\\UnitTesing\\UnitTesing.csproj",
         "packagesPath": "C:\\Users\\Mohan sahu\\.nuget\\packages\\",
-        "outputPath": "D:\\nunit\\NUnitTesting\\UnitTesing\\obj\\",
+        "outputPath": "D:\\nunit2\\NUnitTesting\\UnitTesing\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mohan sahu\\AppData\\Roaming\\NuGet\\NuGet.Config",
