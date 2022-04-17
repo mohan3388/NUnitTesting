@@ -6,21 +6,14 @@ using System.Threading.Tasks;
 
 namespace VendingMachine
 {
-    public class TempratureCon
+    public class MonthlyPayment
     {
-        public void CelTOFer()
+        public void CalMonthlyPayment(double principal, double year, double rateOfIntrest)
         {
-            Console.WriteLine("enter To convert Celcious to Fahrenheit: ");
-            int n = Convert.ToInt32(Console.ReadLine());
-            int cel = n * 9 / 5 + 32;
-            Console.WriteLine(cel);
-        }
-        public void FerToCel()
-        {
-            Console.WriteLine("enter To convert Fahrenheit to Celcious : ");
-            int n = Convert.ToInt32(Console.ReadLine());
-            int fer = n - 32 * 5 / 9;
-            Console.WriteLine(fer);
+            double rateOfInterestMonthly = rateOfIntrest / (12 * 100);//rate of intrest monthly
+            double n = 12 * year;//year in monthly
+            double payment = (principal * rateOfInterestMonthly) / (1 - Math.Pow((1 + rateOfInterestMonthly), (-n)));
+            Console.WriteLine("Monthly payment is:" + payment);
         }
     }
 }

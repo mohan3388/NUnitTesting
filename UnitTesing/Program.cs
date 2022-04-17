@@ -1,6 +1,5 @@
 ﻿using System;
 using VendingMachine;
 
-TempratureCon stop = new TempratureCon();
-stop.CelTOFer();
-stop.FerToCel();
+MonthlyPayment series = new MonthlyPayment();
+series.CalMonthlyPayment(10000,18,9);
