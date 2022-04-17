@@ -1,4 +1,5 @@
 ﻿using System;
 using VendingMachine;
 
-SqrtNewtonMethod.Sqrt();
+BinaryConversion series = new BinaryConversion();
+series.Conversion();

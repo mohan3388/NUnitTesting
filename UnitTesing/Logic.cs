@@ -6,30 +6,28 @@ using System.Threading.Tasks;
 
 namespace VendingMachine
 {
-    public class SqrtNewtonMethod
+    public class BinaryConversion
     {
-        public static void Sqrt()
+        public void Conversion()
         {
+            int i;
+
             Console.WriteLine("enter number: ");
-            int c = Convert.ToInt32(Console.ReadLine());
-            double t = c;
-            double l = 0.00001;
-            double sqrtNumber;
-            int count = 0;
-            while (true)
+            int num = Convert.ToInt32(Console.ReadLine());
+            int[] a = new int[num];
+            for (i = 0; num > 0; i++)
             {
-                count++;
-                sqrtNumber = 0.5 * (t + (c / t));
-
-                if (Math.Abs(sqrtNumber - t) < l)
-
-                    break;
-                t = sqrtNumber;
+                a[i] = num % 2;
+                num = num / 2;
 
             }
-            Console.WriteLine("sqrt given number is: " + sqrtNumber);
+
+            Console.WriteLine("banary of the given number");
+            for (i = i - 1; i >= 0; i--)
+            {
+                Console.Write(a[i]);
+            }
 
         }
-
     }
 }
