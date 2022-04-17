@@ -6,14 +6,30 @@ using System.Threading.Tasks;
 
 namespace VendingMachine
 {
-    public class MonthlyPayment
+    public class SqrtNewtonMethod
     {
-        public void CalMonthlyPayment(double principal, double year, double rateOfIntrest)
+        public static void Sqrt()
         {
-            double rateOfInterestMonthly = rateOfIntrest / (12 * 100);//rate of intrest monthly
-            double n = 12 * year;//year in monthly
-            double payment = (principal * rateOfInterestMonthly) / (1 - Math.Pow((1 + rateOfInterestMonthly), (-n)));
-            Console.WriteLine("Monthly payment is:" + payment);
+            Console.WriteLine("enter number: ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            double t = c;
+            double l = 0.00001;
+            double sqrtNumber;
+            int count = 0;
+            while (true)
+            {
+                count++;
+                sqrtNumber = 0.5 * (t + (c / t));
+
+                if (Math.Abs(sqrtNumber - t) < l)
+
+                    break;
+                t = sqrtNumber;
+
+            }
+            Console.WriteLine("sqrt given number is: " + sqrtNumber);
+
         }
+
     }
 }
