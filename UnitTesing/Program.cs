@@ -1,5 +1,6 @@
 ﻿using System;
 using VendingMachine;
 
-DayofWeek stop = new DayofWeek();
-stop.Week();
+TempratureCon stop = new TempratureCon();
+stop.CelTOFer();
+stop.FerToCel();
