@@ -28,7 +28,7 @@ namespace VendingMachine
             }
             else
             {
-                Console.WriteLine("Press spacebar only!... to start and stop stopwatch");
+                Console.WriteLine("Press spacebar only!.... to start and stop stopwatch");
             }
         }
     }
