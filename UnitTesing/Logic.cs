@@ -8,26 +8,20 @@ namespace UnitTesing
 {
     public class Logic
     {
-        public static int FabonacciSeries(int n)
+        public static void FabonacciSeries()
         {
-            if (n == 0)
-
-                return 0;
-
-            if (n == 1)
-                return 1;
-            return FabonacciSeries(n - 1) + FabonacciSeries(n - 2);
-        }
-
-        public void Fabonacci()
-        {
-            Console.Write("enter length: ");
-            int length = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < length; i++)
+            int n1=0, n2=1,i,n3;
+            Console.WriteLine("Fabonacci Series");
+            Console.WriteLine("Enter number: "); 
+            int num = Convert.ToInt32(Console.ReadLine()); //num=8
+            Console.Write(n1 + " , " + n2+" , ");  //n1=0, n2=1
+            for(i=2; i<num;i++)   //i=2; i<8; i++
             {
-                Console.Write("{0} ", FabonacciSeries(i));
+                n3 = n1 + n2;  //n3=0+1 =1
+                n1 = n2;     //0=1
+                n2 = n3;     //1=1
+                Console.Write("{0} , ", n3); //1
             }
-            Console.ReadKey();
         }
     }
 }
